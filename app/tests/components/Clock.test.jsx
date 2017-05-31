@@ -30,6 +30,7 @@ describe('Clock', () => {
 
       expect(actual).toBe(expected);
     });
+    
     it('should format seconds when min/sec are less then 10', () => {
       var clock = TestUtils.renderIntoDocument(<Clock/>);
       var seconds = 61;
